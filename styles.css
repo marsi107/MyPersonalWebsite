@@ -155,3 +155,34 @@ footer {
   width: 100%;
   border-radius: 0%;
 }
+
+nav ul li:last-child {
+  margin-right: 0; /* Remove margin right for the last list item */
+}
+
+nav ul li:last-child a {
+  padding: 0; /* Remove padding to eliminate extra space */
+}
+
+nav ul li:last-child a i {
+  color: #fff;
+  font-size: 20px;
+}
+
+footer {
+  background-color: #333;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+footer p {
+  display: flex;
+  align-items: center; /* Vertically align the name and icon */
+  justify-content: center; /* Horizontally center the name and icon */
+}
+
+footer a {
+  color: #fff;
+  margin-left: 10px; /* Add some spacing between the name and icon */
+}
