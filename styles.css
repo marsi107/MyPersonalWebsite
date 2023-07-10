@@ -47,6 +47,19 @@ h1, h2, h3 {
   color: #fff; /* Updated color for better visibility */
 }
 
+/* Increase the font size for the titles */
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
 .cta-button {
   display: inline-block;
   padding: 10px 20px;
@@ -190,5 +203,5 @@ footer {
 }
 
 .contact-list a i {
-  font-size: 34px; /* Updated font size to make the icon bigger */
+  font-size: 32px; /* Updated font size to make the icon bigger */
 }
