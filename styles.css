@@ -168,3 +168,27 @@ footer {
   color: #fff;
   text-align: center;
 }
+
+/* Contact Me Section */
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-list li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.contact-list li:last-child {
+  margin-right: 0;
+}
+
+.contact-list a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact-list a i {
+  font-size: 34px; /* Updated font size to make the icon bigger */
+}
