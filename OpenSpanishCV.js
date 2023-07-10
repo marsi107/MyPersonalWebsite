@@ -6,6 +6,6 @@ document.addEventListener('DOMContentLoaded', function() {
   // Add click event listener to the button
   spanishCVButton.addEventListener('click', function() {
     // Open the Spanish CV document in a new tab
-    window.open('CV-Ruben-ES.pdf', '_blank');
+    window.open('resources/CV-Ruben-ES.pdf', '_blank');
   });
 });
