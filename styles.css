@@ -8,16 +8,16 @@
 }
 
 /* Global styles */
+header {
+  background-color: #333; /* define bg color to gray scale */
+  padding: 20px;
+}
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   color: #fff; /* define the text color as white  */
   background-color: #222; /* define bg color to gray */
-}
-
-header {
-  background-color: #333; /* define bg color to gray scale */
-  padding: 20px;
 }
 
 nav ul {
