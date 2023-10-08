@@ -1,26 +1,29 @@
 # MyPersonalWebsite
-That website provides a basic structure and design to showcase the skills, resume, and contact information.
 
-## Features
+This project is a basic website to showcase my portfolio
+
+## Features of the website
 
 - Responsive design to ensure a great user experience across various devices.
-- Sections for an introduction, about me, resume, and contact.
+- Sections for an introduction, about me, portfolio, resume, and contact.
 - Contact links to allow visitors get in touch.
-- Easy customization and addition of content.
 
-## Technologies Used
+## Tech Stack used
 
-- HTML5
-- CSS3
 - JavaScript
+- React
+- TailwindCSS
 
-## Usage
+## Documentation used
 
-If you want to use this website as a template...
+- [React documentation](https://reactjs.org/)
+- [TailwindCSS documentation](https://tailwindcss.com/docs/guides/create-react-app)
+- [HTTP Status Codes](https://www.restapitutorial.com/httpstatuscodes.html)
+- [Render documentation](https://render.com/docs)
 
-1. Clone the repository or download the source code.
-2. Open the `index.html` file in a web browser to view the website.
-3. Customize the content, update the resume, and modify the styling to suit your needs.
+## Assets used
+
+- [Icons](https://heroicons.com/)
 
 ## Support and Contributions
 
@@ -28,5 +31,4 @@ If you encounter any issues or have suggestions for improvement, please feel fre
 
 ## Author
 
-Rubén Martínez
-https://marsi107.github.io/MyPersonalWebsite/
+[Rubén Martínez](Add link here)
