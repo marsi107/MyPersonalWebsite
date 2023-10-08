@@ -17,3 +17,7 @@ text -> #EFEEF0 - light gray
 text -> #322F36 - black
 
 ## Font Definition
+
+Heading -> Open sans
+Body -> Noto Sans
+fallback -> Roboto
