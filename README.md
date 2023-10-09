@@ -11,15 +11,15 @@ This project is a basic website to showcase my portfolio
 ## Tech Stack used
 
 - JavaScript
-- React
+- typeScript
+- Next.js
 - TailwindCSS
 
 ## Documentation used
 
-- [React documentation](https://reactjs.org/)
+- [Next documentation](https://nextjs.org/docs)
 - [TailwindCSS documentation](https://tailwindcss.com/docs/guides/create-react-app)
 - [HTTP Status Codes](https://www.restapitutorial.com/httpstatuscodes.html)
-- [Render documentation](https://render.com/docs)
 
 ## Assets used
 
@@ -31,4 +31,4 @@ If you encounter any issues or have suggestions for improvement, please feel fre
 
 ## Author
 
-[Rubén Martínez](https://rubenportfolio.onrender.com/)
+[Rubén Martínez](https://rubenportfolio.vercel.app/)
