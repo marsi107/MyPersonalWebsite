@@ -4,7 +4,7 @@ import { NavBar, Portfolio, TechStack, Resume, Contact } from "./components"
 
 const HomePage = () => {
   return (
-    <div className="h-screen bg-defColors-first text-defColors-text dark:bg-defColors-first_dark dark:text-defColors-text_dark">
+    <div className="h-screen bg-defColors-first text-defColors-text dark:bg-defColors-first_dark dark:text-defColors-text_dark font-noto">
       <NavBar />
       HomePage
       <Portfolio />

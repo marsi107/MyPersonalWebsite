@@ -20,6 +20,12 @@ const config: Config = {
           text_dark: "#EFEEF0",
         }
       },
+      fontFamily: {
+        // 👇 Add CSS variables
+        open: ["var(--font-opensans)"],
+        noto: ["var(--font-notosans)"],
+        rob: ["var(--font-roboto)"],
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
