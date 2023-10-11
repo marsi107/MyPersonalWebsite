@@ -7,8 +7,10 @@ const HomePage = () => {
     <div>
       <NavBar />
       <div className="pt-20 pl-5">
-        <div>
+        <div id="Home">
           HomePage
+        </div>
+        <div id="AboutMe">
           Aboutme and so on
         </div>
         <Portfolio />
