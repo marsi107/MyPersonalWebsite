@@ -32,9 +32,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en"
-    className={`${openSans.variable} ${notoSans.variable} ${roboto.variable} font-sans`}
+      className={`${openSans.variable} ${notoSans.variable} ${roboto.variable} font-sans`}
     >
-      <body>{children}</body>
+      <body className="bg-defColors-first text-defColors-text dark:bg-defColors-first_dark dark:text-defColors-text_dark font-noto" >{children}</body>
     </html>
   )
 }
