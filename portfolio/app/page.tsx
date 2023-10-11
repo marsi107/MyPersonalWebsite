@@ -8,50 +8,15 @@ const HomePage = () => {
       <NavBar />
       <div className="pt-20 pl-5">
         <div id="Home">
-          HomePage
+          <p>Some dummy for homepage text Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, eligendi dolorem obcaecati quis illum quo nihil, magni iusto minus magnam dolor, voluptatibus ad aut sunt architecto et voluptatum beatae voluptate?</p>
         </div>
         <div id="AboutMe">
-          Aboutme and so on
+          <p>Some dummy text for aboutme Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, distinctio maxime. Eius consectetur repellat sunt inventore enim amet, soluta voluptatem in alias doloremque ea neque? Optio expedita debitis a nulla facilis sint perspiciatis, commodi odit quisquam vero veniam corrupti labore, laboriosam corporis minima voluptates, fugiat quo deleniti pariatur deserunt illum?</p>
         </div>
         <Portfolio />
         <TechStack />
         <Resume />
         <Contact />
-        <div>
-          Temp lorem ipsum to see if it behaves as a landing page
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt illo nostrum voluptatum enim placeat! Ad qui autem, numquam illo non distinctio commodi voluptate debitis illum perspiciatis consectetur id tenetur nam.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt illo nostrum voluptatum enim placeat! Ad qui autem, numquam illo non distinctio commodi voluptate debitis illum perspiciatis consectetur id tenetur nam.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt illo nostrum voluptatum enim placeat! Ad qui autem, numquam illo non distinctio commodi voluptate debitis illum perspiciatis consectetur id tenetur nam.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt illo nostrum voluptatum enim placeat! Ad qui autem, numquam illo non distinctio commodi voluptate debitis illum perspiciatis consectetur id tenetur nam.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt illo nostrum voluptatum enim placeat! Ad qui autem, numquam illo non distinctio commodi voluptate debitis illum perspiciatis consectetur id tenetur nam.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt illo nostrum voluptatum enim placeat! Ad qui autem, numquam illo non distinctio commodi voluptate debitis illum perspiciatis consectetur id tenetur nam.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt illo nostrum voluptatum enim placeat! Ad qui autem, numquam illo non distinctio commodi voluptate debitis illum perspiciatis consectetur id tenetur nam.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt illo nostrum voluptatum enim placeat! Ad qui autem, numquam illo non distinctio commodi voluptate debitis illum perspiciatis consectetur id tenetur nam.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt illo nostrum voluptatum enim placeat! Ad qui autem, numquam illo non distinctio commodi voluptate debitis illum perspiciatis consectetur id tenetur nam.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt illo nostrum voluptatum enim placeat! Ad qui autem, numquam illo non distinctio commodi voluptate debitis illum perspiciatis consectetur id tenetur nam.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt illo nostrum voluptatum enim placeat! Ad qui autem, numquam illo non distinctio commodi voluptate debitis illum perspiciatis consectetur id tenetur nam.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt illo nostrum voluptatum enim placeat! Ad qui autem, numquam illo non distinctio commodi voluptate debitis illum perspiciatis consectetur id tenetur nam.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt illo nostrum voluptatum enim placeat! Ad qui autem, numquam illo non distinctio commodi voluptate debitis illum perspiciatis consectetur id tenetur nam.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt illo nostrum voluptatum enim placeat! Ad qui autem, numquam illo non distinctio commodi voluptate debitis illum perspiciatis consectetur id tenetur nam.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt illo nostrum voluptatum enim placeat! Ad qui autem, numquam illo non distinctio commodi voluptate debitis illum perspiciatis consectetur id tenetur nam.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt illo nostrum voluptatum enim placeat! Ad qui autem, numquam illo non distinctio commodi voluptate debitis illum perspiciatis consectetur id tenetur nam.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt illo nostrum voluptatum enim placeat! Ad qui autem, numquam illo non distinctio commodi voluptate debitis illum perspiciatis consectetur id tenetur nam.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt illo nostrum voluptatum enim placeat! Ad qui autem, numquam illo non distinctio commodi voluptate debitis illum perspiciatis consectetur id tenetur nam.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt illo nostrum voluptatum enim placeat! Ad qui autem, numquam illo non distinctio commodi voluptate debitis illum perspiciatis consectetur id tenetur nam.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt illo nostrum voluptatum enim placeat! Ad qui autem, numquam illo non distinctio commodi voluptate debitis illum perspiciatis consectetur id tenetur nam.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt illo nostrum voluptatum enim placeat! Ad qui autem, numquam illo non distinctio commodi voluptate debitis illum perspiciatis consectetur id tenetur nam.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt illo nostrum voluptatum enim placeat! Ad qui autem, numquam illo non distinctio commodi voluptate debitis illum perspiciatis consectetur id tenetur nam.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt illo nostrum voluptatum enim placeat! Ad qui autem, numquam illo non distinctio commodi voluptate debitis illum perspiciatis consectetur id tenetur nam.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt illo nostrum voluptatum enim placeat! Ad qui autem, numquam illo non distinctio commodi voluptate debitis illum perspiciatis consectetur id tenetur nam.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt illo nostrum voluptatum enim placeat! Ad qui autem, numquam illo non distinctio commodi voluptate debitis illum perspiciatis consectetur id tenetur nam.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt illo nostrum voluptatum enim placeat! Ad qui autem, numquam illo non distinctio commodi voluptate debitis illum perspiciatis consectetur id tenetur nam.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt illo nostrum voluptatum enim placeat! Ad qui autem, numquam illo non distinctio commodi voluptate debitis illum perspiciatis consectetur id tenetur nam.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt illo nostrum voluptatum enim placeat! Ad qui autem, numquam illo non distinctio commodi voluptate debitis illum perspiciatis consectetur id tenetur nam.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt illo nostrum voluptatum enim placeat! Ad qui autem, numquam illo non distinctio commodi voluptate debitis illum perspiciatis consectetur id tenetur nam.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt illo nostrum voluptatum enim placeat! Ad qui autem, numquam illo non distinctio commodi voluptate debitis illum perspiciatis consectetur id tenetur nam.
-          </p>
-        </div>
       </div>
     </div>
   )
