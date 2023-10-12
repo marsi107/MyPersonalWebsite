@@ -1,14 +1,11 @@
 'use client'
-import React, { useState } from 'react'
+import React from 'react'
 import Dropdown from './Dropdown'
 
 const NavBar = () => {
 
     const menuSections = ['Home', 'AboutMe', 'Portfolio', 'TechStack', 'Resume', 'Contact']
     const darkModeSections = ['System', 'Light', 'Dark']
-
-    const [isMenuDropdownOpen, setIsMenuDropdownOpen] = useState(false)
-    const [isDarkModeDropdownOpen, setIsDarkModeDropdownOpen] = useState(false)
 
     const scrollToSection = (event: any) => {
         event.preventDefault()
@@ -18,15 +15,6 @@ const NavBar = () => {
             behavior: "smooth"
         })
     }
-
-    const toggleMenuDropdown = () => {
-        setIsMenuDropdownOpen(!isMenuDropdownOpen)
-    }
-
-    const toggleDarkModeDropdown = () => {
-        setIsDarkModeDropdownOpen(!isDarkModeDropdownOpen)
-    }
-
 
     // <Bars3Icon className="cursor-pointer h-16 pl-6 sm:pr-9 sm:h-9 lg:hidden" />
     // <Bars3Icon className="cursor-pointer hover:bg-slate-500 focus:outline-none h-16 pl-6 sm:pr-9 sm:h-9 lg:hidden" onClick={toggleMenuDropdown} />
