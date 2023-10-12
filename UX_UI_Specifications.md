@@ -2,19 +2,11 @@
 
 ## Color definition
 
-### Dark theme
-
-60 -> #322F36 - black
-30 -> #2E856E - green
-10 -> #3F0094 - purple
-text -> #EFEEF0 - light gray
-
-### Light theme
-
-60 -> #EFEEF0 - light gray
-30 -> #009688 - turquoise
-10 -> #7D4E9D - light purple
-text -> #322F36 - black
+main: "#38BDF8" - blue for headers and accents
+dBG: "#333333" - light black for bg
+dGray: "#5F6A72" - dark gray for hovers
+lBG: "#F9FAFB" - gray white for bg
+lGray: "#F3F4F6" - light gray for hovers
 
 ## Font Definition
 

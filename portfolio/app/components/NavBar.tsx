@@ -22,15 +22,15 @@ const NavBar = () => {
 
     // className="pl-6 sm:pr-9 lg:hidden"
     return (
-        <header className="fixed items-center h-[50px] w-screen flex bg-defColors-second dark:bg-defColors-second_dark font-rob lg:h-[60px]">
+        <header className="fixed items-center h-[50px] w-screen flex bg-defColors-lBG text-defColors-main border-b border-defColors-dBG dark:bg-defColors-dBG dark:border-defColors-lBG font-rob lg:h-[60px]">
             <div className="grow"></div>
             <div className="pl-6 sm:pr-9 lg:hidden">
                 <Dropdown sections={menuSections} iconIndex={0} />
             </div>
             <div className="flex space-x-6 text-lg sm:text-2xl sm:space-x-9 lg:space-x-16">
-                <a href="#Home" className="hover:bg-gray-500 max-sm:hidden" onClick={scrollToSection}>Home</a>
-                <a href="#AboutMe" className="max-lg:hidden" onClick={scrollToSection}>About Me</a>
-                <a href="#Portfolio" onClick={scrollToSection}>Portfolio</a>
+                <a href="#Home" className="hover:bg-defColors-dGray max-sm:hidden" onClick={scrollToSection}>Home</a>
+                <a href="#AboutMe" className=" hover:bg-defColors-lGray max-lg:hidden" onClick={scrollToSection}>About Me</a>
+                <a href="#Portfolio" className=" hover:bg-defColors-lGray" onClick={scrollToSection}>Portfolio</a>
                 <a href="#TechStack" className="max-lg:hidden" onClick={scrollToSection}>Tech Stack</a>
                 <a href="#Resume" onClick={scrollToSection}>Resume</a>
                 <a href="#Contact" onClick={scrollToSection}>Contact</a>
