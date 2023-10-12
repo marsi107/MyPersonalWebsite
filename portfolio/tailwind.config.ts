@@ -14,7 +14,7 @@ const config: Config = {
           dBG: "#333333",
           dGray: "#5F6A72",
           lBG: "#F9FAFB",
-          lGray: "#F3F4F6",
+          lGray: "#E5E7EB",
         }
       },
       fontFamily: {

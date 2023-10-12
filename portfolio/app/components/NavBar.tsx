@@ -32,7 +32,7 @@ const NavBar = () => {
                 <a href="#AboutMe" className=" hover:bg-defColors-lGray max-lg:hidden" onClick={scrollToSection}>About Me</a>
                 <a href="#Portfolio" className=" hover:bg-defColors-lGray" onClick={scrollToSection}>Portfolio</a>
                 <a href="#TechStack" className="max-lg:hidden" onClick={scrollToSection}>Tech Stack</a>
-                <a href="#Resume" onClick={scrollToSection}>Resume</a>
+                <a href="#Resume" className=" hover:bg-gray-200" onClick={scrollToSection}>Resume</a>
                 <a href="#Contact" onClick={scrollToSection}>Contact</a>
             </div>
             <div className='pl-6 pr-6 sm:pl-9 lg:pl-16'>
