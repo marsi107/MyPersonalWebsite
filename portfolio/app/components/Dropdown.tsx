@@ -13,7 +13,7 @@ interface DropdownProps {
 
 export default function Dropdown({ sections, iconIndex }: DropdownProps) {
 
-    let menuItemClassName = "absolute z-10 mt-2 origin-top-right rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none bg-defColors-lBG dark:bg-defColors-dBG"
+    let menuItemClassName = "absolute z-10 mt-2 origin-top-right rounded-md shadow-lg ring-1 ring-opacity-5 focus:outline-none ring-defColors-dBG dark:ring-slate-800 bg-defColors-lBG dark:bg-defColors-dBG"
 
     const checkDropdownIcon = (iconIndex: number) => {
         switch (iconIndex) {

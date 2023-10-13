@@ -28,7 +28,7 @@ const NavBar = () => {
                 <Dropdown sections={menuSections} iconIndex={0} />
             </div>
             <div className="flex space-x-6 text-lg sm:text-2xl sm:space-x-9 lg:space-x-16">
-                <a href="#Home" className="hover:bg-defColors-lGray dark:hover:bg-defColors-dGray max-sm:hidden" onClick={scrollToSection}>Home</a>
+                <a href="#Home" className="hover:bg-defColors-lGray dark:hover:bg-defColors-dGray rounded-md max-sm:hidden" onClick={scrollToSection}>Home</a>
                 <a href="#AboutMe" className="hover:bg-defColors-lGray dark:hover:bg-defColors-dGray max-lg:hidden" onClick={scrollToSection}>About Me</a>
                 <a href="#Portfolio" className="hover:bg-defColors-lGray dark:hover:bg-defColors-dGray" onClick={scrollToSection}>Portfolio</a>
                 <a href="#TechStack" className="hover:bg-defColors-lGray dark:hover:bg-defColors-dGray max-lg:hidden" onClick={scrollToSection}>Tech Stack</a>
