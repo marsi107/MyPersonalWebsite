@@ -16,11 +16,6 @@ const NavBar = () => {
         })
     }
 
-    // <Bars3Icon className="cursor-pointer h-16 pl-6 sm:pr-9 sm:h-9 lg:hidden" />
-    // <Bars3Icon className="cursor-pointer hover:bg-slate-500 focus:outline-none h-16 pl-6 sm:pr-9 sm:h-9 lg:hidden" onClick={toggleMenuDropdown} />
-    // <MoonIcon className="cursor-pointer h-14 pl-6 pr-6 sm:h-8 sm:pl-9 lg:h-10 lg:pl-16" onClick={toggleDarkModeDropdown} />
-
-    // className="pl-6 sm:pr-9 lg:hidden"
     return (
         <header className="fixed items-center h-[50px] w-screen flex shadow-lg bg-defColors-lBG text-defColors-main dark:bg-defColors-dBG font-rob lg:h-[60px]">
             <div className="grow"></div>
