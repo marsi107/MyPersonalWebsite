@@ -1,11 +1,22 @@
 'use client'
-import React from 'react'
+import React, { useEffect } from 'react'
 import Dropdown from './Dropdown'
 
 const NavBar = () => {
 
     const menuSections = ['Home', 'AboutMe', 'Portfolio', 'TechStack', 'Resume', 'Contact']
     const darkModeSections = ['System', 'Light', 'Dark']
+
+    useEffect(() => {
+        console.log("UseEffect")
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            console.log("DM set to true")
+            document.documentElement.classList.add('dark')
+        } else {
+            console.log("DM set to false")
+            document.documentElement.classList.remove('dark')
+        }
+    }, [])
 
     const scrollToSection = (event: any) => {
         event.preventDefault()

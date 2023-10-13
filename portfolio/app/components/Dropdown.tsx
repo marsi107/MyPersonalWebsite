@@ -31,30 +31,45 @@ export default function Dropdown({ sections, iconIndex }: DropdownProps) {
         }
     }
 
-    const toggleDarkMode = () => {
-        console.log("dark mode toggled")
-        localStorage.theme = 'dark'
-        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+    const onSectionClick = (event: any) => {
+        event.preventDefault()
+        const sectionId = event.target.getAttribute("href")?.substring(1)
+        if (iconIndex === 1) {
+            handleDarkMode(sectionId)
+        } else {
+            scrollToSection(sectionId)
+        }
+    }
+    const scrollToSection = (secId: string) => {
+        const section = document.getElementById(secId)
+        section?.scrollIntoView({
+            behavior: "smooth"
+        })
+    }
+
+    const handleDarkMode = (mode: string) => {
+        console.log("dark mode set to = " + mode.toLowerCase())
+        if (mode === "System" || mode == undefined) {
+            // The user explicitly chose to respect the OS preference
+            localStorage.removeItem('theme')
+        } else {
+            //The user explicitly chose the mode
+            localStorage.theme = mode.toLowerCase()
+        }
+        setDarkMode()
+    }
+    const setDarkMode = () => {
         if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             document.documentElement.classList.add('dark')
         } else {
             document.documentElement.classList.remove('dark')
         }
-
-        //// Whenever the user explicitly chooses light mode
-        //localStorage.theme = 'light'
-        //
-        //// Whenever the user explicitly chooses dark mode
-        //localStorage.theme = 'dark'
-        //
-        //// Whenever the user explicitly chooses to respect the OS preference
-        //localStorage.removeItem('theme')
     }
 
     return (
         <Menu as="div" className="relative inline-block text-left">
             <div>
-                <Menu.Button onClick={toggleDarkMode} className="inline-flex w-full justify-center rounded-md pr-[3px] text-sm font-semibold text-defColors-main shadow-sm hover:bg-defColors-lGray dark:hover:bg-defColors-dGray">
+                <Menu.Button className="inline-flex w-full justify-center rounded-md pr-[3px] text-sm font-semibold text-defColors-main shadow-sm hover:bg-defColors-lGray dark:hover:bg-defColors-dGray">
                     {checkDropdownIcon(iconIndex)}
                 </Menu.Button>
             </div>
@@ -76,6 +91,7 @@ export default function Dropdown({ sections, iconIndex }: DropdownProps) {
                                     {({ active }) => (
                                         <a
                                             href={`#${section}`}
+                                            onClick={onSectionClick}
                                             className={classNames(
                                                 active ? 'text-defColors-main bg-defColors-lGray dark:bg-defColors-dGray' : 'text-defColors-dBG dark:text-defColors-lBG',
                                                 'block px-4 py-2 text-sm rounded-md'
