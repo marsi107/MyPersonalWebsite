@@ -6,7 +6,7 @@ const HomePage = () => {
   return (
     <div>
       <NavBar />
-      <div className="pt-20 pl-5">
+      <div className="pt-20 px-4 lg:px-32">
         <div id="Home">
           <p>Some dummy for homepage</p>
         </div>
