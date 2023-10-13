@@ -13,28 +13,28 @@ interface DropdownProps {
 
 export default function Dropdown({ sections, iconIndex }: DropdownProps) {
 
-    let menuItemClassName = "absolute z-10 mt-2 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+    let menuItemClassName = "absolute z-10 mt-2 origin-top-right rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none bg-defColors-lBG dark:bg-defColors-dBG"
 
     const checkDropdownIcon = (iconIndex: number) => {
         switch (iconIndex) {
             case 0:
                 menuItemClassName += " left-0 w-24"
-                return <Bars3Icon className="-mr-1 h-5 w-5 text-gray-400" aria-hidden="true" />
+                return <Bars3Icon className="-mr-1 h-9 w-9 text-defColors-main" aria-hidden="true" />
 
             case 1:
                 menuItemClassName += " right-0 w-20"
-                return <MoonIcon className="-mr-1 h-5 w-5 text-gray-400" aria-hidden="true" />
+                return <MoonIcon className="-mr-1 h-9 w-9 text-defColors-main" aria-hidden="true" />
 
             default:
                 menuItemClassName += " left-0 w-24"
-                return <Bars3Icon className="-mr-1 h-5 w-5 text-gray-400" aria-hidden="true" />
+                return <Bars3Icon className="-mr-1 h-5 w-5 text-defColors-main" aria-hidden="true" />
         }
     }
 
     return (
         <Menu as="div" className="relative inline-block text-left">
             <div>
-                <Menu.Button className="inline-flex w-full justify-center rounded-md px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">
+                <Menu.Button className="inline-flex w-full justify-center rounded-md pr-[3px] text-sm font-semibold text-defColors-main shadow-sm hover:bg-defColors-lGray dark:hover:bg-defColors-dGray">
                     {checkDropdownIcon(iconIndex)}
                 </Menu.Button>
             </div>
@@ -57,8 +57,8 @@ export default function Dropdown({ sections, iconIndex }: DropdownProps) {
                                         <a
                                             href={`#${section}`}
                                             className={classNames(
-                                                active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                                                'block px-4 py-2 text-sm'
+                                                active ? 'text-defColors-main bg-defColors-lGray dark:bg-defColors-dGray' : 'text-defColors-dBG dark:text-defColors-lBG',
+                                                'block px-4 py-2 text-sm rounded-md'
                                             )}
                                         >
                                             {section}
