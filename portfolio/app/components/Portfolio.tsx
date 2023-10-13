@@ -13,7 +13,7 @@ const Portfolio = () => {
             <div className="mr-5">
                 <Swiper
                     loop={true}
-                    spaceBetween={1}
+                    spaceBetween={0}
                     navigation={true}
                     modules={[Navigation, Autoplay]}
                     autoplay={{
@@ -23,10 +23,10 @@ const Portfolio = () => {
                     className="h-[50%] text-defColors-main"
                 >
                     <SwiperSlide>
-                        <img src={"../../images/amazon-clone.PNG"} />
+                        <img src={"../images/amazon-clone.PNG"} />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src={"../../images/Portfolio.jpg"} />
+                        <img src={"../images/Portfolio.PNG"} />
                     </SwiperSlide>
                 </Swiper>
             </div>
