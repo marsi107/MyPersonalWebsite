@@ -31,10 +31,30 @@ export default function Dropdown({ sections, iconIndex }: DropdownProps) {
         }
     }
 
+    const toggleDarkMode = () => {
+        console.log("dark mode toggled")
+        localStorage.theme = 'dark'
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+
+        //// Whenever the user explicitly chooses light mode
+        //localStorage.theme = 'light'
+        //
+        //// Whenever the user explicitly chooses dark mode
+        //localStorage.theme = 'dark'
+        //
+        //// Whenever the user explicitly chooses to respect the OS preference
+        //localStorage.removeItem('theme')
+    }
+
     return (
         <Menu as="div" className="relative inline-block text-left">
             <div>
-                <Menu.Button className="inline-flex w-full justify-center rounded-md pr-[3px] text-sm font-semibold text-defColors-main shadow-sm hover:bg-defColors-lGray dark:hover:bg-defColors-dGray">
+                <Menu.Button onClick={toggleDarkMode} className="inline-flex w-full justify-center rounded-md pr-[3px] text-sm font-semibold text-defColors-main shadow-sm hover:bg-defColors-lGray dark:hover:bg-defColors-dGray">
                     {checkDropdownIcon(iconIndex)}
                 </Menu.Button>
             </div>

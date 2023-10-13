@@ -34,7 +34,7 @@ export default function RootLayout({
     <html lang="en"
       className={`${openSans.variable} ${notoSans.variable} ${roboto.variable} font-sans`}
     >
-      <body className=" bg-defColors-lBG text-defColors-dBG dark:bg-defColors-dBG dark:text-defColors-lBG font-noto" >{children}</body>
+      <body className="bg-defColors-lBG text-defColors-dBG dark:bg-defColors-dBG dark:text-defColors-lBG font-noto" >{children}</body>
     </html>
   )
 }
