@@ -27,7 +27,7 @@ export default function Dropdown({ sections, iconIndex }: DropdownProps) {
 
             default:
                 menuItemClassName += " left-0 w-24"
-                return <Bars3Icon className="-mr-1 h-5 w-5 text-defColors-main" aria-hidden="true" />
+                return <Bars3Icon className="-mr-1 h-9 w-9 text-defColors-main" aria-hidden="true" />
         }
     }
 
