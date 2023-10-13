@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .headers2 {
+        @apply text-defColors-main text-3xl lg:text-4xl
+    }
+}
