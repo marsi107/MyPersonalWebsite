@@ -20,12 +20,14 @@ const Portfolio = () => {
                         delay: 5000,
                         disableOnInteraction: false,
                     }}
-                    className="h-[50%] text-defColors-main"
+                    className="h-[50%]"
                 >
                     <SwiperSlide>
+                        <h3 className="mb-2">Amazon Clone</h3>
                         <img src={"../images/amazon-clone.PNG"} />
                     </SwiperSlide>
                     <SwiperSlide>
+                        <h3 className="mb-2">My Portfolio</h3>
                         <img src={"../images/Portfolio.PNG"} />
                     </SwiperSlide>
                 </Swiper>
