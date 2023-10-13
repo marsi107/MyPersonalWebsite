@@ -1,6 +1,7 @@
 import { Fragment } from 'react'
 import { Menu, Transition } from '@headlessui/react'
 import { MoonIcon, Bars3Icon } from '@heroicons/react/24/outline'
+import { setDarkMode, scrollToSection } from '../utils/Handlers'
 
 function classNames(...classes: any) {
     return classes.filter(Boolean).join(' ')
@@ -40,12 +41,6 @@ export default function Dropdown({ sections, iconIndex }: DropdownProps) {
             scrollToSection(sectionId)
         }
     }
-    const scrollToSection = (secId: string) => {
-        const section = document.getElementById(secId)
-        section?.scrollIntoView({
-            behavior: "smooth"
-        })
-    }
 
     const handleDarkMode = (mode: string) => {
         console.log("dark mode set to = " + mode.toLowerCase())
@@ -57,13 +52,6 @@ export default function Dropdown({ sections, iconIndex }: DropdownProps) {
             localStorage.theme = mode.toLowerCase()
         }
         setDarkMode()
-    }
-    const setDarkMode = () => {
-        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            document.documentElement.classList.add('dark')
-        } else {
-            document.documentElement.classList.remove('dark')
-        }
     }
 
     return (
