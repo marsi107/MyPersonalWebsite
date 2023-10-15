@@ -10,6 +10,7 @@ lGray: "#E5E7EB" - light gray for hovers
 
 ## Font Definition
 
-Heading -> Open sans
-Body -> Noto Sans
-fallback -> Roboto
+Headings -> Hatton
+Buttons and subheadings - Raleway
+Body -> Lato
+fallback -> Open Sans
