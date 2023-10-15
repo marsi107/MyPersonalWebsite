@@ -19,7 +19,7 @@ const NavBar = () => {
     }
 
     return (
-        <header className="fixed items-center h-[50px] w-screen flex shadow-lg bg-defColors-lBG text-defColors-main dark:bg-defColors-dBG font-rob lg:h-[60px]">
+        <header className="fixed items-center h-[50px] w-screen z-50 flex shadow-lg bg-defColors-lBG text-defColors-main dark:bg-defColors-dBG font-rob lg:h-[60px]">
             <div className="grow"></div>
             <div className="px-3 pt-1 sm:pr-5 lg:hidden">
                 <Dropdown sections={menuSections} iconIndex={0} />
