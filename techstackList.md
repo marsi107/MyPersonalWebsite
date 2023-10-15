@@ -1,0 +1,1 @@
+js, next, react, express, ts, tailwind, SQL, node, API, git, redux, postgres, py, stripe, html, css, unit tests
