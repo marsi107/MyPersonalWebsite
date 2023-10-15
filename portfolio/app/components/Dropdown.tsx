@@ -17,7 +17,7 @@ export default function Dropdown({ sections, iconIndex }: DropdownProps) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [menuIcon, setMenuIcon] = useState(null);
     const [darkModeIcon, setDarkModeIcon] = useState(null);
-    const [localMode, setLocalMode] = useState(null);
+    const [localMode, setLocalMode] = useState("");
 
     let menuItemClassName = "absolute z-10 mt-2 origin-top-right rounded-md shadow-lg customRing bg-defColors-lBG dark:bg-defColors-dBG"
 
@@ -32,7 +32,7 @@ export default function Dropdown({ sections, iconIndex }: DropdownProps) {
     }
     const checkDarkModeIcon = () => {
         let tempIcon: any = null
-        if (localMode === "System" || localMode == null) {
+        if (localMode === "System" || localMode == "") {
             if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
                 tempIcon = <MoonIcon className="-mr-1 h-9 w-9 text-defColors-lBG" aria-hidden="true" />
             } else {
