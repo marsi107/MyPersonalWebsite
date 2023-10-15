@@ -1,6 +1,6 @@
-import { Fragment } from 'react'
+import { Fragment, useState, useEffect } from 'react'
 import { Menu, Transition } from '@headlessui/react'
-import { MoonIcon, Bars3Icon } from '@heroicons/react/24/outline'
+import { MoonIcon, Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { setDarkMode, scrollToSection } from '../utils/Handlers'
 
 function classNames(...classes: any) {
@@ -14,21 +14,43 @@ interface DropdownProps {
 
 export default function Dropdown({ sections, iconIndex }: DropdownProps) {
 
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [menuIcon, setMenuIcon] = useState(null);
+    const [darkModeIcon, setDarkModeIcon] = useState(null);
+
     let menuItemClassName = "absolute z-10 mt-2 origin-top-right rounded-md shadow-lg customRing bg-defColors-lBG dark:bg-defColors-dBG"
 
-    const checkDropdownIcon = (iconIndex: number) => {
+    const checkMenuIcon = () => {
+        let tempIcon: any = null
+        if (isMenuOpen) {
+            tempIcon = <XMarkIcon className="-mr-1 h-9 w-9 text-defColors-main" aria-hidden="true" />
+        } else {
+            tempIcon = <Bars3Icon className="-mr-1 h-9 w-9 text-defColors-main" aria-hidden="true" />
+        }
+        setMenuIcon(tempIcon)
+    }
+    const checkDarkModeIcon = () => {
+        let tempIcon: any = null
+        tempIcon = <MoonIcon className="-mr-1 h-9 w-9 text-defColors-main" aria-hidden="true" />
+        setDarkModeIcon(tempIcon)
+    }
+
+    const onMenuClick = () => {
+        setIsMenuOpen(!isMenuOpen)
+    }
+
+    const setDropdownsInitialState = (iconIndex: number) => {
         switch (iconIndex) {
             case 0:
                 menuItemClassName += " left-0 w-24"
-                return <Bars3Icon className="-mr-1 h-9 w-9 text-defColors-main" aria-hidden="true" />
-
+                break;
             case 1:
                 menuItemClassName += " right-0 w-20"
-                return <MoonIcon className="-mr-1 h-9 w-9 text-defColors-main" aria-hidden="true" />
+                break;
 
             default:
                 menuItemClassName += " left-0 w-24"
-                return <Bars3Icon className="-mr-1 h-9 w-9 text-defColors-main" aria-hidden="true" />
+                break;
         }
     }
 
@@ -54,11 +76,23 @@ export default function Dropdown({ sections, iconIndex }: DropdownProps) {
         setDarkMode()
     }
 
+    setDropdownsInitialState(iconIndex)
+
+    useEffect(() => {
+        checkMenuIcon()
+    }, [isMenuOpen]);
+
+    useEffect(() => {
+        checkDarkModeIcon()
+    }, []);
+
     return (
         <Menu as="div" className="relative inline-block text-left">
             <div>
-                <Menu.Button className="inline-flex w-full justify-center rounded-md pr-[3px] text-sm font-semibold text-defColors-main shadow-sm hover:bg-defColors-lGray dark:hover:bg-defColors-dGray">
-                    {checkDropdownIcon(iconIndex)}
+                <Menu.Button className="inline-flex w-full justify-center rounded-md pr-[3px] text-sm font-semibold text-defColors-main shadow-sm hover:bg-defColors-lGray dark:hover:bg-defColors-dGray"
+                    onClick={onMenuClick}
+                >
+                    {iconIndex == 0 ? menuIcon : darkModeIcon}
                 </Menu.Button>
             </div>
 
