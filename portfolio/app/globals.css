@@ -4,6 +4,10 @@
 
 @layer components {
     .headers2 {
-        @apply text-defColors-main text-3xl mb-4 lg:text-4xl
+        @apply text-defColors-main text-3xl my-6 sm:mt-9 sm:mb-7 lg:mt-12 lg:mb-8 lg:text-4xl
+    }
+
+    .customRing {
+        @apply ring-1 ring-opacity-5 focus:outline-none ring-defColors-dBG dark:ring-slate-800
     }
 }
