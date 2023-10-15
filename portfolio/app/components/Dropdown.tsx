@@ -1,6 +1,6 @@
 import { Fragment, useState, useEffect } from 'react'
 import { Menu, Transition } from '@headlessui/react'
-import { MoonIcon, Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { SunIcon, MoonIcon, Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { setDarkMode, scrollToSection } from '../utils/Handlers'
 
 function classNames(...classes: any) {
@@ -17,6 +17,7 @@ export default function Dropdown({ sections, iconIndex }: DropdownProps) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [menuIcon, setMenuIcon] = useState(null);
     const [darkModeIcon, setDarkModeIcon] = useState(null);
+    const [localMode, setLocalMode] = useState(null);
 
     let menuItemClassName = "absolute z-10 mt-2 origin-top-right rounded-md shadow-lg customRing bg-defColors-lBG dark:bg-defColors-dBG"
 
@@ -31,7 +32,17 @@ export default function Dropdown({ sections, iconIndex }: DropdownProps) {
     }
     const checkDarkModeIcon = () => {
         let tempIcon: any = null
-        tempIcon = <MoonIcon className="-mr-1 h-9 w-9 text-defColors-main" aria-hidden="true" />
+        if (localMode === "System" || localMode == null) {
+            if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                tempIcon = <MoonIcon className="-mr-1 h-9 w-9 text-defColors-lBG" aria-hidden="true" />
+            } else {
+                tempIcon = <SunIcon className="-mr-1 h-9 w-9 text-defColors-dBG" aria-hidden="true" />
+            }
+        } else if (localMode === "Light") {
+            tempIcon = <SunIcon className="-mr-1 h-9 w-9 text-defColors-main" aria-hidden="true" />
+        } else {
+            tempIcon = <MoonIcon className="-mr-1 h-9 w-9 text-defColors-main" aria-hidden="true" />
+        }
         setDarkModeIcon(tempIcon)
     }
 
@@ -65,7 +76,6 @@ export default function Dropdown({ sections, iconIndex }: DropdownProps) {
     }
 
     const handleDarkMode = (mode: string) => {
-        console.log("dark mode set to = " + mode.toLowerCase())
         if (mode === "System" || mode == undefined) {
             // The user explicitly chose to respect the OS preference
             localStorage.removeItem('theme')
@@ -74,6 +84,7 @@ export default function Dropdown({ sections, iconIndex }: DropdownProps) {
             localStorage.theme = mode.toLowerCase()
         }
         setDarkMode()
+        setLocalMode(mode)
     }
 
     setDropdownsInitialState(iconIndex)
@@ -84,7 +95,7 @@ export default function Dropdown({ sections, iconIndex }: DropdownProps) {
 
     useEffect(() => {
         checkDarkModeIcon()
-    }, []);
+    }, [localMode]);
 
     return (
         <Menu as="div" className="relative inline-block text-left">
