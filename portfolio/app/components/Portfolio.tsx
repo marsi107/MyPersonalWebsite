@@ -10,7 +10,7 @@ const Portfolio = () => {
     return (
         <div id="Portfolio">
             <h2 className="headers2">Portfolio</h2>
-            <div className="mr-5">
+            <div className="">
                 <Swiper
                     loop={true}
                     spaceBetween={0}
