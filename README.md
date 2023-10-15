@@ -25,6 +25,7 @@ This project is a basic website to showcase my portfolio
 ## Assets used
 
 -   [Icons](https://heroicons.com/)
+-   [Font Awesome Icons](https://fontawesome.com/v4/icons/)
 
 ## Support and Contributions
 

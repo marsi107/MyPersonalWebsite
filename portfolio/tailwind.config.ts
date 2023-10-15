@@ -16,6 +16,8 @@ module.exports = {
           dGray: "#5F6A72",
           lBG: "#F9FAFB",
           lGray: "#E5E7EB",
+          linkedin: "#0a66c2",
+          git: "#6e5494",
         }
       },
       fontFamily: {
