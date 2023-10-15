@@ -32,13 +32,13 @@ export default function Dropdown({ sections, iconIndex }: DropdownProps) {
     }
     const checkDarkModeIcon = () => {
         let tempIcon: any = null
-        if (localMode === "System" || localMode == "") {
+        if ((localMode === "System" || localMode == "") && !('theme' in localStorage)) {
             if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
                 tempIcon = <MoonIcon className="-mr-1 h-9 w-9 text-defColors-lBG" aria-hidden="true" />
             } else {
                 tempIcon = <SunIcon className="-mr-1 h-9 w-9 text-defColors-dBG" aria-hidden="true" />
             }
-        } else if (localMode === "Light") {
+        } else if (localMode === "Light" || localStorage.theme !== 'dark') {
             tempIcon = <SunIcon className="-mr-1 h-9 w-9 text-defColors-main" aria-hidden="true" />
         } else {
             tempIcon = <MoonIcon className="-mr-1 h-9 w-9 text-defColors-main" aria-hidden="true" />
