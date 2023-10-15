@@ -6,7 +6,7 @@ import '@fortawesome/fontawesome-svg-core/styles.css'; // Import the core styles
 const TechStack = () => {
     return (
         <div id="TechStack">
-            <h2 className="headers2">Portfolio</h2>
+            <h2 className="headers2">Tech Stack</h2>
             <div className="space-x-1">
                 <FontAwesomeIcon icon={faSquareJs} size="3x" className="text-yellow-400" />
                 <FontAwesomeIcon icon={faReact} size="3x" className="text-defColors-main" />
