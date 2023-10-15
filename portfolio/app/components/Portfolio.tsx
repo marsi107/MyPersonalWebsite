@@ -25,13 +25,13 @@ const Portfolio = () => {
                     <SwiperSlide>
                         <a href="https://amazon-clone-app-2wie.onrender.com/" target="_blank">
                             <h3 className="mb-2">Amazon Clone</h3>
-                            <img src={"../images/amazon-clone.PNG"} />
+                            <img src={"../images/amazon-clone.PNG"} alt="amazon clone main screen" />
                         </a>
                     </SwiperSlide>
                     <SwiperSlide>
                         <a href="https://rubenportfolio.vercel.app/" target="_blank">
                             <h3 className="mb-2">My Portfolio</h3>
-                            <img src={"../images/Portfolio.PNG"} />
+                            <img src={"../images/Portfolio.PNG"} alt="ruben portfolio image" />
                         </a>
                     </SwiperSlide>
                 </Swiper>
