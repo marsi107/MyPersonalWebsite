@@ -1,1 +1,1 @@
-export const techList = ["javascript", "reactjs", "typescript", "tailwind", "nodejs", "git", "redux", "html", "css"];
+export const techList = ["javascript", "nextjs", "reactjs", "express", "typescript", "tailwind", "nodejs", "api", "sql", "git", "redux", "postgreSQL", "py", "html", "css"];
