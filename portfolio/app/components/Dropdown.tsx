@@ -1,4 +1,4 @@
-import { Fragment, useState, useEffect } from 'react'
+import { Fragment, useState, useEffect, useRef } from 'react'
 import { Menu, Transition } from '@headlessui/react'
 import { SunIcon, MoonIcon, Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { setDarkMode, scrollToSection } from '../utils/Handlers'
@@ -18,6 +18,7 @@ export default function Dropdown({ sections, iconIndex }: DropdownProps) {
     const [menuIcon, setMenuIcon] = useState(null);
     const [darkModeIcon, setDarkModeIcon] = useState(null);
     const [localMode, setLocalMode] = useState("");
+    const dropdownRef = useRef(null);
 
     let menuItemClassName = "absolute z-10 mt-2 origin-top-right rounded-md shadow-lg customRing bg-defColors-lBG dark:bg-defColors-dBG"
 
@@ -97,9 +98,24 @@ export default function Dropdown({ sections, iconIndex }: DropdownProps) {
         checkDarkModeIcon()
     }, [localMode]);
 
+    useEffect(() => {
+        const handleOutsideClick = (event: MouseEvent) => {
+            const curr: any = dropdownRef.current
+            if (dropdownRef.current && !curr.contains(event.target as EventTarget)) {
+                setIsMenuOpen(false);
+            }
+        };
+
+        document.addEventListener('click', handleOutsideClick);
+
+        return () => {
+            document.removeEventListener('click', handleOutsideClick);
+        };
+    }, []);
+
     return (
         <Menu as="div" className="relative inline-block text-left">
-            <div>
+            <div ref={dropdownRef} className="dropdown">
                 <Menu.Button className="inline-flex w-full justify-center rounded-md pr-[3px] text-sm font-semibold shadow-sm navBarItemsHover"
                     onClick={onMenuClick}
                 >
