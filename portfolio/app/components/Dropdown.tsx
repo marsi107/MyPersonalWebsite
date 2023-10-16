@@ -26,7 +26,7 @@ export default function Dropdown({ sections, iconIndex }: DropdownProps) {
         if (isMenuOpen) {
             tempIcon = <XMarkIcon className="-mr-1 h-9 w-9 text-defColors-main" aria-hidden="true" />
         } else {
-            tempIcon = <Bars3Icon className="-mr-1 h-9 w-9 text-defColors-main" aria-hidden="true" />
+            tempIcon = <Bars3Icon className="-mr-1 h-9 w-9" aria-hidden="true" />
         }
         setMenuIcon(tempIcon)
     }
@@ -100,7 +100,7 @@ export default function Dropdown({ sections, iconIndex }: DropdownProps) {
     return (
         <Menu as="div" className="relative inline-block text-left">
             <div>
-                <Menu.Button className="inline-flex w-full justify-center rounded-md pr-[3px] text-sm font-semibold text-defColors-main shadow-sm hover:bg-defColors-lGray dark:hover:bg-defColors-dGray"
+                <Menu.Button className="inline-flex w-full justify-center rounded-md pr-[3px] text-sm font-semibold shadow-sm navBarItemsHover"
                     onClick={onMenuClick}
                 >
                     {iconIndex == 0 ? menuIcon : darkModeIcon}

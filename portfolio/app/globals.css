@@ -4,10 +4,18 @@
 
 @layer components {
     .headers2 {
-        @apply text-defColors-main text-3xl my-6 sm:mt-9 sm:mb-7 lg:mt-12 lg:mb-8 lg:text-4xl
+        @apply text-defColors-main text-3xl mb-6 mt-8 sm:mt-9 sm:mb-7 lg:mt-12 lg:mb-8 lg:text-4xl font-hatton
+    }
+
+    .headers3 {
+        @apply mb-2 font-rale text-xl
     }
 
     .customRing {
         @apply ring-1 ring-opacity-5 focus:outline-none ring-defColors-dBG dark:ring-slate-800
+    }
+
+    .navBarItemsHover {
+        @apply hover:bg-defColors-lGray hover:text-defColors-main dark:hover:bg-defColors-dGray dark:hover:text-defColors-main
     }
 }

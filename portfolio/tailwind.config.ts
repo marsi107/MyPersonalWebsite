@@ -22,9 +22,9 @@ module.exports = {
       },
       fontFamily: {
         // 👇 Add CSS variables
-        open: ["var(--font-opensans)"],
-        noto: ["var(--font-notosans)"],
-        rob: ["var(--font-roboto)"],
+        hatton: ["var(--font-hatton)"],
+        rale: ["var(--font-raleway)"],
+        lato: ["var(--font-lato)"],
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

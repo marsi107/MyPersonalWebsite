@@ -24,14 +24,9 @@ const Portfolio = () => {
                 >
                     <SwiperSlide>
                         <a href="https://amazon-clone-app-2wie.onrender.com/" target="_blank">
-                            <h3 className="mb-2">Amazon Clone</h3>
+                            <h3 className="headers3">Amazon Clone</h3>
+                            <p className="mb-2">This is a full stack project which consist in cloning amazon with react, tailwind, express and some other technologies.</p>
                             <img src={"../images/amazon-clone.PNG"} alt="amazon clone main screen" />
-                        </a>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <a href="https://rubenportfolio.vercel.app/" target="_blank">
-                            <h3 className="mb-2">My Portfolio</h3>
-                            <img src={"../images/Portfolio.PNG"} alt="ruben portfolio image" />
                         </a>
                     </SwiperSlide>
                 </Swiper>
