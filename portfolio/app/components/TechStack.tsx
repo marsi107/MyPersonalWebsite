@@ -12,7 +12,7 @@ const TechStack = () => {
     return (
         <div id="TechStack">
             <h2 className="headers2">Tech Stack</h2>
-            <div className="flex flex-row flex-wrap gap-10">
+            <div className="flex flex-row flex-wrap gap-5">
                 {
                     techList.map((techItem) =>
                         <Tilt className="h-20 w-20">
