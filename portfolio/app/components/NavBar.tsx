@@ -5,7 +5,7 @@ import { setDarkMode, scrollToSection } from '../utils/Handlers'
 
 const NavBar = () => {
 
-    const menuSections = ['Home', 'AboutMe', 'Portfolio', 'TechStack', 'Resume', 'Contact']
+    const menuSections = ['Home', 'AboutMe', 'TechStack', 'Portfolio', 'Resume', 'Contact']
     const darkModeSections = ['System', 'Light', 'Dark']
 
     useEffect(() => {
@@ -27,8 +27,8 @@ const NavBar = () => {
             <div className="flex text-lg h-full items-center sm:text-2xl">
                 <a href="#Home" className="navBarItemsHover h-full pt-2 px-3 sm:px-5 lg:pt-3 lg:px-8 rounded-md max-sm:hidden" onClick={onSectionClick}>Home</a>
                 <a href="#AboutMe" className="navBarItemsHover h-full pt-2 px-3 sm:px-5 lg:pt-3 lg:px-8 rounded-md max-lg:hidden" onClick={onSectionClick}>About Me</a>
-                <a href="#Portfolio" className="navBarItemsHover h-full pt-[10px] px-3 sm:pt-2 sm:px-5 lg:pt-3 lg:px-8 rounded-md" onClick={onSectionClick}>Portfolio</a>
                 <a href="#TechStack" className="navBarItemsHover h-full pt-2 px-3 sm:px-5 lg:pt-3 lg:px-8 rounded-md max-lg:hidden" onClick={onSectionClick}>Tech Stack</a>
+                <a href="#Portfolio" className="navBarItemsHover h-full pt-[10px] px-3 sm:pt-2 sm:px-5 lg:pt-3 lg:px-8 rounded-md" onClick={onSectionClick}>Portfolio</a>
                 <a href="#Resume" className="navBarItemsHover h-full pt-[10px] px-3 sm:pt-2 sm:px-5 lg:pt-3 lg:px-8 rounded-md" onClick={onSectionClick}>Resume</a>
                 <a href="#Contact" className="navBarItemsHover h-full pt-[10px] px-3 sm:pt-2 sm:px-5 lg:pt-3 lg:px-8 rounded-md" onClick={onSectionClick}>Contact</a>
             </div>
