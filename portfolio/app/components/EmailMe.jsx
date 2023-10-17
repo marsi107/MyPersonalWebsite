@@ -3,15 +3,27 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
 const EmailMe = () => {
-    const form = useRef();
+    const form = useRef()
+    const nameInput = useRef()
+    const emailInput = useRef()
+    const messageInput = useRef()
+
+    const clearForm = () => {
+        nameInput.current.value = ''
+        emailInput.current.value = ''
+        messageInput.current.value = ''
+    }
 
     const sendEmail = (e) => {
         e.preventDefault();
 
         emailjs.sendForm('service_jbi4uci', 'template_j2ymi1g', form.current, '4ji9rQoDQIopvzNZU')
             .then((result) => {
+                clearForm()
+                alert("Message sent!")
                 console.log(result.text);
             }, (error) => {
+                alert("Error " + error.text + " please try to send the message again")
                 console.log(error.text);
             });
     };
@@ -30,6 +42,7 @@ const EmailMe = () => {
                     name="user_name"
                     required
                     placeholder="Your Name"
+                    ref={nameInput}
                 />
                 <label className="block mt-4 mb-2">Email</label>
                 <input
@@ -38,6 +51,7 @@ const EmailMe = () => {
                     name="user_email"
                     required
                     placeholder="Your Email"
+                    ref={emailInput}
                 />
                 <label className="block mt-4 mb-2">Message</label>
                 <textarea
@@ -45,6 +59,7 @@ const EmailMe = () => {
                     name="message"
                     required
                     placeholder="Some Message..."
+                    ref={messageInput}
                 />
                 <input className="block cursor-pointer mt-6 bg-defColors-main rounded-lg py-1 w-full hover:text-defColors-lGray dark:hover:text-defColors-dGray" type="submit" value="Send" />
             </form>
