@@ -27,7 +27,7 @@ export const techList = [
     {
         name: "tailwind",
         alt: "Tailwind CSS icon",
-        fullName: "Tailwind CSS"
+        fullName: "TailwindCSS"
     },
     {
         name: "nodejs",
