@@ -18,4 +18,8 @@
     .navBarItemsHover {
         @apply hover:bg-defColors-lGray hover:text-defColors-main dark:hover:bg-defColors-dGray dark:hover:text-defColors-main
     }
+
+    .contactInputs {
+        @apply font-lato w-full border-b-[1px] border-b-defColors-main bg-defColors-lGray dark:bg-defColors-dGray text-defColors-dBG dark:text-defColors-lBG
+    }
 }
