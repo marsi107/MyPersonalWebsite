@@ -20,6 +20,6 @@
     }
 
     .contactInputs {
-        @apply font-lato w-full border-b-[1px] border-b-defColors-main bg-defColors-lGray dark:bg-defColors-dGray text-defColors-dBG dark:text-defColors-lBG
+        @apply font-lato w-full border-b-[1px] border-b-defColors-main bg-defColors-lBG dark:bg-defColors-dGray text-defColors-dBG dark:text-defColors-lBG
     }
 }

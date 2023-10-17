@@ -39,7 +39,7 @@ const TechStack = () => {
                             <div className="h-6 mt-1 -mb-2">
                                 {
                                     isHovered && indexHovered === index && (
-                                        <div className="relative text-center font-rale text-defColors-dBG dark:text-defColors-lGray">
+                                        <div className="relative text-center font-rale text-defColors-dBG dark:text-defColors-lBG">
                                             {techList[indexHovered].fullName}
                                         </div>
                                     )
