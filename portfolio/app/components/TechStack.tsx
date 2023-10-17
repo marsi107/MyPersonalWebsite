@@ -16,8 +16,8 @@ const TechStack = () => {
                     techList.map((techItem, index) =>
                         <Tilt key={index} className="h-20 w-20">
                             <img
-                                src={iconPath + techItem + iconExt}
-                                alt="Description of the image"
+                                src={iconPath + techItem.name + iconExt}
+                                alt={techItem.alt}
                                 width={80}
                                 height={80}
                             />
