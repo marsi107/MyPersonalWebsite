@@ -25,7 +25,7 @@ const NavBar = () => {
                 <Dropdown sections={menuSections} iconIndex={0} />
             </div>
             <div className="flex text-lg h-full items-center sm:text-2xl">
-                <a href="#Home" className="navBarItemsHover h-full pt-[10px] px-3 sm:px-5 lg:pt-3 lg:px-8 rounded-md" onClick={onSectionClick}>Home</a>
+                <a href="#Home" className="navBarItemsHover h-full pt-[10px] px-3 sm:pt-2 sm:px-5 lg:pt-3 lg:px-8 rounded-md" onClick={onSectionClick}>Home</a>
                 <a href="#AboutMe" className="navBarItemsHover h-full pt-2 px-3 sm:px-5 lg:pt-3 lg:px-8 rounded-md max-lg:hidden" onClick={onSectionClick}>About Me</a>
                 <a href="#TechStack" className="navBarItemsHover h-full pt-2 px-3 sm:px-5 lg:pt-3 lg:px-8 rounded-md max-lg:hidden" onClick={onSectionClick}>Tech Stack</a>
                 <a href="#Portfolio" className="navBarItemsHover h-full pt-[10px] px-3 sm:pt-2 sm:px-5 lg:pt-3 lg:px-8 rounded-md" onClick={onSectionClick}>Portfolio</a>
