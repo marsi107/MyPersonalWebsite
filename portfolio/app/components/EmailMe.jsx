@@ -61,7 +61,7 @@ const EmailMe = () => {
                     placeholder="Some Message..."
                     ref={messageInput}
                 />
-                <input className="block cursor-pointer mt-6 bg-defColors-main rounded-lg py-1 w-full hover:text-defColors-lGray dark:hover:text-defColors-dGray" type="submit" value="Send" />
+                <input className="block cursor-pointer mt-6 bg-defColors-main rounded-lg py-1 w-full hover:font-semibold hover:text-defColors-lGray dark:hover:text-defColors-dGray" type="submit" value="Send" />
             </form>
         </div>
     )
