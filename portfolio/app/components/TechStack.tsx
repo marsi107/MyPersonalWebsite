@@ -22,8 +22,8 @@ const TechStack = () => {
             <div className="flex flex-row flex-wrap gap-5">
                 {
                     techList.map((techItem, index) =>
-                        <div>
-                            <Tilt key={index}
+                        <div key={index}>
+                            <Tilt
                                 className="h-20 w-20"
                                 onMouseEnter={() => onIconHover(index)}
                                 onMouseLeave={() => setIsHovered(false)}
